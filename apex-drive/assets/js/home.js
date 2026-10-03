@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function start() {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    timer = setInterval(() => show(index + 1), 5000);
+    timer = setInterval(() => { if (!carHost.isConnected) return stop(); show(index + 1); }, 5000);
   }
   function stop() { clearInterval(timer); timer = null; }
   document.getElementById("hero-stage").addEventListener("click", e => {

@@ -240,6 +240,7 @@ export function mountCar3D(container, vehicle, color) {
   let t0 = performance.now();
   function loop() {
     raf = 0;
+    if (!container.isConnected) { ro.disconnect(); io.disconnect(); renderer.dispose(); return; }
     if (!visible) return;
     const now = performance.now(), dt = Math.min((now - t0) / 1000, 0.05); t0 = now;
     if (!dragging) {

@@ -188,7 +188,7 @@
 </a>`;
   }
 
-  window.ApexUI = { store, toast, initReveal, initCounters, initAccordions, hashId, vehicleCard, currentTheme };
+  window.ApexUI = { renderNav, renderFooter, store, toast, initReveal, initCounters, initAccordions, hashId, vehicleCard, currentTheme };
 
   document.addEventListener("DOMContentLoaded", () => {
     renderNav();

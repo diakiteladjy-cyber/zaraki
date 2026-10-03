@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Réservation · Apex Drive</title>
+<meta name="description" content="Réservez votre véhicule Apex Drive en quatre étapes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600&family=Figtree:wght@400;500;600;700&family=Syncopate:wght@700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="booking">
+<div id="site-nav"></div>
+
+<main class="section" style="padding-top:clamp(32px,5vw,56px)">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Réservation</span>
+      <h1 class="display" style="font-size:var(--t-xl)">Réservez en quatre étapes</h1>
+      <p class="muted">Le total affiché à droite est le prix final TTC. Aucun paiement n'est demandé en ligne : la caution est prise à la remise des clés.</p>
+    </div>
+
+    <ol class="stepper" id="stepper">
+      <li data-step="1">Véhicule et dates</li>
+      <li data-step="2">Options</li>
+      <li data-step="3">Conducteur</li>
+      <li data-step="4">Validation</li>
+    </ol>
+
+    <div class="book-grid">
+      <form id="booking" novalidate style="min-width:0">
+
+        <section class="book-step" data-step="1" aria-labelledby="s1-title">
+          <h2 class="h3" id="s1-title">Choisissez votre véhicule</h2>
+          <div class="vh-pick" id="vh-pick" role="radiogroup" aria-label="Véhicule"></div>
+
+          <h2 class="h3">Lieu et dates</h2>
+          <div class="form-grid">
+            <div class="field"><label for="pickup">Agence de départ</label><select class="input" id="pickup" name="pickup"></select></div>
+            <div class="field"><label for="dropoff">Agence de retour</label><select class="input" id="dropoff" name="dropoff"></select></div>
+            <div class="field"><label for="start-date">Date de départ</label><input class="input" type="date" id="start-date" name="startDate" required></div>
+            <div class="field"><label for="start-time">Heure de départ</label><select class="input" id="start-time" name="startTime"></select></div>
+            <div class="field"><label for="end-date">Date de retour</label><input class="input" type="date" id="end-date" name="endDate" required></div>
+            <div class="field"><label for="end-time">Heure de retour</label><select class="input" id="end-time" name="endTime"></select></div>
+          </div>
+          <p class="notice notice--err" id="s1-error" hidden></p>
+        </section>
+
+        <section class="book-step" data-step="2" aria-labelledby="s2-title" hidden>
+          <h2 class="h3" id="s2-title">Options</h2>
+          <p class="muted">Toutes les options sont facultatives. Le prix se met à jour à droite.</p>
+          <div class="opt-list" id="opt-list"></div>
+        </section>
+
+        <section class="book-step" data-step="3" aria-labelledby="s3-title" hidden>
+          <h2 class="h3" id="s3-title">Conducteur principal</h2>
+          <div class="form-grid">
+            <div class="field"><label for="firstname">Prénom</label><input class="input" id="firstname" name="firstname" autocomplete="given-name" required><span class="err"></span></div>
+            <div class="field"><label for="lastname">Nom</label><input class="input" id="lastname" name="lastname" autocomplete="family-name" required><span class="err"></span></div>
+            <div class="field"><label for="email">E-mail</label><input class="input" type="email" id="email" name="email" autocomplete="email" required><span class="err"></span></div>
+            <div class="field"><label for="phone">Téléphone</label><input class="input" type="tel" id="phone" name="phone" autocomplete="tel" placeholder="06 12 34 56 78" required><span class="err"></span></div>
+            <div class="field"><label for="birth">Date de naissance</label><input class="input" type="date" id="birth" name="birth" autocomplete="bday" required><span class="err"></span></div>
+            <div class="field"><label for="license">Date d'obtention du permis B</label><input class="input" type="date" id="license" name="license" required><span class="err"></span></div>
+            <div class="field full"><label for="notes">Précisions (facultatif)</label><textarea class="input" id="notes" name="notes" placeholder="Numéro de vol, adresse de livraison, occasion particulière…"></textarea></div>
+          </div>
+        </section>
+
+        <section class="book-step" data-step="4" aria-labelledby="s4-title" hidden>
+          <h2 class="h3" id="s4-title">Vérifiez et validez</h2>
+          <div class="panel" id="recap"></div>
+          <label class="check"><input type="checkbox" id="accept" name="accept"> <span>J'ai lu et j'accepte les <a href="legal.html#conditions">conditions générales de location</a> et la <a href="legal.html#confidentialite">politique de confidentialité</a>.</span></label>
+          <p class="notice notice--err" id="s4-error" hidden></p>
+        </section>
+
+        <section class="book-step confirm" id="done" hidden aria-live="polite">
+          <span class="eyebrow">Demande enregistrée</span>
+          <h2 class="h2">Merci, votre véhicule est réservé.</h2>
+          <span class="label">Numéro de réservation</span>
+          <span class="confirm__code" id="code"></span>
+          <p class="muted" id="done-text" style="max-width:60ch"></p>
+          <p class="notice">Site de démonstration : aucune réservation n'est transmise et aucun e-mail n'est envoyé.</p>
+          <div class="btn-row"><a class="btn" href="index.html">Retour à l'accueil</a><button class="btn btn--ghost" type="button" id="restart">Nouvelle réservation</button></div>
+        </section>
+
+        <div class="btn-row" id="nav-btns" style="margin-top:28px;justify-content:space-between">
+          <button class="btn btn--ghost" type="button" id="prev">Retour</button>
+          <button class="btn btn--primary" type="submit" id="next">Continuer</button>
+        </div>
+      </form>
+
+      <aside class="panel summary sticky-panel" aria-label="Récapitulatif du prix" id="summary"></aside>
+    </div>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/booking.js"></script>
+</body>
+</html>

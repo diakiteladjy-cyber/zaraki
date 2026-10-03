@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fiche véhicule · Apex Drive</title>
+<meta name="description" content="Caractéristiques, vue 3D et conditions de location du véhicule.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600&family=Figtree:wght@400;500;600;700&family=Syncopate:wght@700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="fleet">
+<div id="site-nav"></div>
+
+<main class="section" style="padding-top:clamp(24px,4vw,48px)">
+  <div class="wrap">
+    <p style="margin-bottom:18px"><a class="hud muted" href="flotte.html" style="text-decoration:none;font-size:.85rem;letter-spacing:.1em">← RETOUR À LA FLOTTE</a></p>
+
+    <div class="vh-head">
+      <div style="display:grid;gap:8px;min-width:0">
+        <span class="eyebrow" id="vh-brand">Porsche</span>
+        <h1 class="display" style="font-size:var(--t-2xl)" id="vh-model">911 Carrera S</h1>
+        <p class="lead" id="vh-tagline">La référence, depuis 1963.</p>
+      </div>
+      <div class="chip-row" id="vh-chips"></div>
+    </div>
+
+    <div class="vh-grid">
+      <div style="min-width:0;display:grid;gap:28px">
+        <div>
+          <div class="stage viewer" id="viewer">
+            <div class="stage__grid"></div>
+            <div class="viewer__svg" id="viewer-svg"></div>
+            <div class="viewer__ui">
+              <div class="tabs" role="tablist" aria-label="Mode d'affichage">
+                <button type="button" role="tab" id="tab-3d" aria-selected="true">Vue 3D</button>
+                <button type="button" role="tab" id="tab-photo" aria-selected="false">Galerie</button>
+              </div>
+              <span class="viewer__status" id="viewer-status" aria-live="polite">Chargement 3D…</span>
+            </div>
+          </div>
+          <div class="thumbs" id="thumbs" role="group" aria-label="Vues du véhicule"></div>
+        </div>
+
+        <div class="panel" style="gap:14px">
+          <span class="label">Teinte</span>
+          <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+            <div class="swatches" id="swatches" role="group" aria-label="Choisir une teinte"></div>
+            <span id="swatch-name" class="hud"></span>
+          </div>
+        </div>
+
+        <div style="display:grid;gap:14px">
+          <h2 class="h2" style="font-size:1.1rem">Présentation</h2>
+          <p id="vh-desc" style="max-width:68ch"></p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:28px">
+          <div style="display:grid;gap:14px;align-content:start">
+            <h2 class="h2" style="font-size:1.1rem">Performances</h2>
+            <div id="gauges" style="display:grid;gap:16px"></div>
+            <p class="muted" style="font-size:.8rem">Barres comparées au véhicule le plus performant de la flotte.</p>
+          </div>
+          <div style="display:grid;gap:14px;align-content:start">
+            <h2 class="h2" style="font-size:1.1rem">Fiche technique</h2>
+            <table class="spec-table"><tbody id="spec-table"></tbody></table>
+          </div>
+        </div>
+      </div>
+
+      <aside class="panel sticky-panel" aria-label="Tarif et réservation">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap">
+          <div><span class="price-big" id="vh-price">590 €</span> <span class="muted">/ jour</span></div>
+          <span class="stars" id="vh-rating"></span>
+        </div>
+        <div class="form-grid">
+          <div class="field"><label for="q-start">Départ</label><input class="input" type="date" id="q-start"></div>
+          <div class="field"><label for="q-end">Retour</label><input class="input" type="date" id="q-end"></div>
+        </div>
+        <div class="summary"><dl id="quote"></dl></div>
+        <a class="btn btn--primary" id="book-link" href="reservation.html">Réserver ce véhicule</a>
+        <table class="spec-table"><tbody id="conditions"></tbody></table>
+        <p class="muted" style="font-size:.8rem">Assurance tous risques, assistance 24h/24 et préparation incluses. Annulation gratuite jusqu'à 72 h avant le départ.</p>
+      </aside>
+    </div>
+  </div>
+
+  <div class="wrap" style="margin-top:clamp(56px,8vw,96px)">
+    <div class="section-head"><span class="eyebrow">Dans la même gamme de prix</span><h2 class="h2">Vous aimerez aussi</h2></div>
+    <div class="cards" id="similar"></div>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/vehicle.js"></script>
+</body>
+</html>

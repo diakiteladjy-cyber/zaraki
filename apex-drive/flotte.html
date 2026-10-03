@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Flotte · Apex Drive</title>
+<meta name="description" content="Toute la flotte Apex Drive : sportives, GT, supercars, berlines et SUV.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600&family=Figtree:wght@400;500;600;700&family=Syncopate:wght@700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="fleet">
+<div id="site-nav"></div>
+
+<main class="section" style="padding-top:clamp(32px,5vw,56px)">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">La flotte</span>
+      <h1 class="display" style="font-size:var(--t-xl)">Choisissez votre véhicule</h1>
+      <p class="muted">Tous les prix sont TTC, par jour, assurance et assistance comprises.</p>
+    </div>
+
+    <div class="fleet-layout">
+      <form class="filters" id="filters" aria-label="Filtrer la flotte">
+        <fieldset>
+          <legend class="label">Catégorie</legend>
+          <div class="seg" id="f-category"></div>
+        </fieldset>
+        <fieldset>
+          <legend class="label">Énergie</legend>
+          <div class="seg" id="f-energy"></div>
+        </fieldset>
+        <fieldset>
+          <legend class="label">Places</legend>
+          <div class="seg">
+            <input type="radio" name="seats" id="seats-all" value="0" checked><label for="seats-all">Toutes</label>
+            <input type="radio" name="seats" id="seats-4" value="4"><label for="seats-4">4 et +</label>
+            <input type="radio" name="seats" id="seats-5" value="5"><label for="seats-5">5</label>
+          </div>
+        </fieldset>
+        <div class="field">
+          <label for="f-price">Prix maximum par jour</label>
+          <input type="range" id="f-price" min="250" max="1300" step="10" value="1300">
+          <div class="range-out"><span class="muted">250 €</span><output id="f-price-out" for="f-price">1 300 €</output></div>
+        </div>
+        <button class="btn btn--ghost" type="reset">Réinitialiser</button>
+      </form>
+
+      <div style="min-width:0">
+        <div class="fleet-bar">
+          <span class="hud" id="fleet-count" aria-live="polite">10 véhicules</span>
+          <div class="field" style="grid-auto-flow:column;align-items:center;gap:10px">
+            <label for="f-sort">Trier par</label>
+            <select class="input" id="f-sort" style="min-height:40px;width:auto">
+              <option value="price-asc">Prix croissant</option>
+              <option value="price-desc">Prix décroissant</option>
+              <option value="power-desc">Puissance</option>
+              <option value="accel-asc">Accélération</option>
+            </select>
+          </div>
+        </div>
+        <div class="cards" id="fleet"></div>
+        <div class="empty" id="fleet-empty" hidden>
+          <strong>Aucun véhicule ne correspond à ces filtres.</strong>
+          <span class="muted">Augmentez le prix maximum ou choisissez une autre catégorie.</span>
+          <button class="btn" type="button" id="fleet-reset">Réinitialiser les filtres</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/fleet.js"></script>
+</body>
+</html>

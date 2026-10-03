@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Apex Drive</title>
+<meta name="description" content="Location de voitures de sport et de prestige à Paris, Lyon, Nice et Bordeaux.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600&family=Figtree:wght@400;500;600;700&family=Syncopate:wght@700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="home">
+<div id="site-nav"></div>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <span class="eyebrow">Location de prestige · Paris · Lyon · Nice · Bordeaux</span>
+        <h1 class="display">Des voitures d'exception, prêtes à partir.</h1>
+        <p class="lead">Dix modèles entretenus par nos mécaniciens, des clés remises en main propre et un prix final affiché avant de réserver. Aucun frais au retour si vous respectez le forfait.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="reservation.html">Réserver un véhicule</a>
+          <a class="btn btn--ghost" href="flotte.html">Voir la flotte</a>
+        </div>
+      </div>
+
+      <div style="display:grid;gap:14px;min-width:0">
+        <div class="stage hero__stage" id="hero-stage">
+          <div class="stage__grid"></div>
+          <div class="hero__model">
+            <span class="eyebrow" id="hero-brand">Porsche</span>
+            <strong id="hero-name">911 Carrera S</strong>
+          </div>
+          <div id="hero-car" style="width:100%;position:relative"></div>
+          <div class="hero__picker" id="hero-picker" role="group" aria-label="Choisir un modèle"></div>
+        </div>
+        <div class="hud-strip" aria-live="polite">
+          <div><span class="lbl">Puissance</span><span class="val"><span id="hud-power" data-count="450">450</span><small>ch</small></span></div>
+          <div><span class="lbl">0–100 km/h</span><span class="val"><span id="hud-accel" data-count="3.5">3,5</span><small>s</small></span></div>
+          <div><span class="lbl">Vitesse max</span><span class="val"><span id="hud-vmax" data-count="308">308</span><small>km/h</small></span></div>
+          <div><span class="lbl">À partir de</span><span class="val"><span id="hud-price" data-count="590">590</span><small>€/jour</small></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Sélection du moment</span>
+        <h2 class="h2">Les modèles les plus demandés</h2>
+        <p class="muted">Prix par jour, kilométrage inclus selon le modèle. Cliquez sur un véhicule pour voir sa fiche et sa vue 3D.</p>
+      </div>
+      <div class="cards" id="featured"></div>
+      <div style="margin-top:28px"><a class="btn" href="flotte.html">Toute la flotte</a></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Comment ça marche</span>
+        <h2 class="h2">De la réservation à la route</h2>
+      </div>
+      <ol class="steps reveal">
+        <li><h3 class="h3">Choisissez et réservez</h3><p class="muted">Sélectionnez un modèle, vos dates et une agence. Le prix total, options comprises, s'affiche avant la validation.</p></li>
+        <li><h3 class="h3">Récupérez les clés</h3><p class="muted">Un préparateur vous présente le véhicule pendant 30 minutes : réglages, modes de conduite, état des lieux photographié.</p></li>
+        <li><h3 class="h3">Roulez, puis rendez-le</h3><p class="muted">Retour dans l'agence de départ ou une autre. La caution est libérée sous 48 heures après l'état des lieux de retour.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Nos agences</span>
+        <h2 class="h2">Cinq points de remise des clés</h2>
+        <p class="muted">Livraison possible à domicile, à l'hôtel ou en gare dans un rayon de 30 km autour de chaque agence.</p>
+      </div>
+      <div class="agencies reveal" id="agencies"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Avis clients</span>
+        <h2 class="h2">Ils ont pris la route avec nous</h2>
+        <p class="muted" style="font-size:.875rem">Avis d'exemple, à remplacer par vos avis clients vérifiés avant la mise en ligne.</p>
+      </div>
+      <div class="reviews" id="reviews"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:40px;align-items:start">
+      <div class="section-head reveal" style="margin:0">
+        <span class="eyebrow">Questions fréquentes</span>
+        <h2 class="h2">Avant de partir</h2>
+        <p class="muted">Une autre question ? Appelez l'agence de votre choix, du lundi au samedi.</p>
+      </div>
+      <div class="accordion reveal">
+        <div class="acc-item is-open"><button type="button">Quel âge faut-il avoir pour louer ?</button><div class="acc-panel"><div><p>De 23 à 30 ans selon le modèle, avec 3 à 8 ans de permis B. Les conditions exactes sont indiquées sur chaque fiche véhicule et vérifiées lors de la réservation.</p></div></div></div>
+        <div class="acc-item"><button type="button">Comment fonctionne la caution ?</button><div class="acc-panel"><div><p>Une empreinte bancaire est prise à la remise des clés, entre 3 000 € et 15 000 € selon le véhicule. Rien n'est débité : l'empreinte est libérée sous 48 heures après le retour si l'état des lieux est conforme.</p></div></div></div>
+        <div class="acc-item"><button type="button">Que comprend le prix affiché ?</button><div class="acc-panel"><div><p>Le prix par jour inclut l'assurance tous risques avec franchise standard, l'assistance 24h/24 et un forfait kilométrique quotidien. Les options (franchise réduite, kilométrage illimité, livraison) s'ajoutent au moment de la réservation.</p></div></div></div>
+        <div class="acc-item"><button type="button">Puis-je rendre le véhicule dans une autre agence ?</button><div class="acc-panel"><div><p>Oui, entre toutes nos agences. Un forfait aller simple de 150 € s'applique et apparaît dans le récapitulatif avant validation.</p></div></div></div>
+        <div class="acc-item"><button type="button">Puis-je annuler ma réservation ?</button><div class="acc-panel"><div><p>L'annulation est gratuite jusqu'à 72 heures avant le départ. Au-delà, 30 % du montant de la location est retenu.</p></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="stage reveal" style="padding:clamp(28px,5vw,56px);display:grid;gap:18px;justify-items:start">
+        <div class="stage__grid"></div>
+        <span class="eyebrow" style="position:relative">Ce week-end</span>
+        <h2 class="h2" style="position:relative;max-width:22ch">Vendredi soir au volant, lundi matin au bureau.</h2>
+        <p class="muted" style="position:relative;max-width:52ch">Formule week-end du vendredi 17h au lundi 10h, facturée trois jours avec 5 % de remise.</p>
+        <a class="btn btn--primary" style="position:relative" href="reservation.html">Réserver mon week-end</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/home.js"></script>
+</body>
+</html>

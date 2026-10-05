@@ -1,405 +1,405 @@
 ---
 name: algorithmic-art
-description: Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.
-license: Complete terms in LICENSE.txt
+description: Crée de l'art algorithmique avec p5.js, un aléatoire à graine (seed) et une exploration interactive des paramètres. À utiliser lorsque l'utilisateur demande de créer de l'art par le code, de l'art génératif, de l'art algorithmique, des champs de flux (flow fields) ou des systèmes de particules. Créez un art algorithmique original plutôt que de copier le travail d'artistes existants, afin d'éviter toute violation du droit d'auteur.
+license: Conditions complètes dans LICENSE.txt
 ---
 
-Algorithmic philosophies are computational aesthetic movements that are then expressed through code. Output .md files (philosophy), .html files (interactive viewer), and .js files (generative algorithms).
+Les philosophies algorithmiques sont des mouvements esthétiques computationnels qui sont ensuite exprimés par le code. Produisez des fichiers .md (philosophie), .html (visualiseur interactif) et .js (algorithmes génératifs).
 
-This happens in two steps:
-1. Algorithmic Philosophy Creation (.md file)
-2. Express by creating p5.js generative art (.html + .js files)
+Cela se fait en deux étapes :
+1. Création de la philosophie algorithmique (fichier .md)
+2. Expression sous forme d'art génératif p5.js (fichiers .html + .js)
 
-First, undertake this task:
+Commencez par cette tâche :
 
-## ALGORITHMIC PHILOSOPHY CREATION
+## CRÉATION DE LA PHILOSOPHIE ALGORITHMIQUE
 
-To begin, create an ALGORITHMIC PHILOSOPHY (not static images or templates) that will be interpreted through:
-- Computational processes, emergent behavior, mathematical beauty
-- Seeded randomness, noise fields, organic systems
-- Particles, flows, fields, forces
-- Parametric variation and controlled chaos
+Pour commencer, créez une PHILOSOPHIE ALGORITHMIQUE (pas des images statiques ni des modèles) qui sera interprétée à travers :
+- Des processus computationnels, des comportements émergents, la beauté mathématique
+- L'aléatoire à graine, les champs de bruit, les systèmes organiques
+- Les particules, les flux, les champs, les forces
+- La variation paramétrique et le chaos contrôlé
 
-### THE CRITICAL UNDERSTANDING
-- What is received: Some subtle input or instructions by the user to take into account, but use as a foundation; it should not constrain creative freedom.
-- What is created: An algorithmic philosophy/generative aesthetic movement.
-- What happens next: The same version receives the philosophy and EXPRESSES IT IN CODE - creating p5.js sketches that are 90% algorithmic generation, 10% essential parameters.
+### LA COMPRÉHENSION ESSENTIELLE
+- Ce qui est reçu : des indications ou instructions subtiles de l'utilisateur, à prendre en compte comme fondation, sans qu'elles ne brident la liberté créative.
+- Ce qui est créé : une philosophie algorithmique / un mouvement esthétique génératif.
+- Ce qui se passe ensuite : la même instance reçoit la philosophie et l'EXPRIME EN CODE, en créant des sketches p5.js composés à 90 % de génération algorithmique et à 10 % de paramètres essentiels.
 
-Consider this approach:
-- Write a manifesto for a generative art movement
-- The next phase involves writing the algorithm that brings it to life
+Envisagez l'approche suivante :
+- Rédiger le manifeste d'un mouvement d'art génératif
+- La phase suivante consiste à écrire l'algorithme qui lui donne vie
 
-The philosophy must emphasize: Algorithmic expression. Emergent behavior. Computational beauty. Seeded variation.
+La philosophie doit mettre l'accent sur : l'expression algorithmique, le comportement émergent, la beauté computationnelle, la variation par graine.
 
-### HOW TO GENERATE AN ALGORITHMIC PHILOSOPHY
+### COMMENT GÉNÉRER UNE PHILOSOPHIE ALGORITHMIQUE
 
-**Name the movement** (1-2 words): "Organic Turbulence" / "Quantum Harmonics" / "Emergent Stillness"
+**Nommez le mouvement** (1 ou 2 mots) : « Turbulence organique » / « Harmoniques quantiques » / « Immobilité émergente »
 
-**Articulate the philosophy** (4-6 paragraphs - concise but complete):
+**Formulez la philosophie** (4 à 6 paragraphes, concis mais complets) :
 
-To capture the ALGORITHMIC essence, express how this philosophy manifests through:
-- Computational processes and mathematical relationships?
-- Noise functions and randomness patterns?
-- Particle behaviors and field dynamics?
-- Temporal evolution and system states?
-- Parametric variation and emergent complexity?
+Pour saisir l'essence ALGORITHMIQUE, exprimez comment cette philosophie se manifeste à travers :
+- Les processus computationnels et les relations mathématiques ?
+- Les fonctions de bruit et les schémas d'aléatoire ?
+- Le comportement des particules et la dynamique des champs ?
+- L'évolution temporelle et les états du système ?
+- La variation paramétrique et la complexité émergente ?
 
-**CRITICAL GUIDELINES:**
-- **Avoid redundancy**: Each algorithmic aspect should be mentioned once. Avoid repeating concepts about noise theory, particle dynamics, or mathematical principles unless adding new depth.
-- **Emphasize craftsmanship REPEATEDLY**: The philosophy MUST stress multiple times that the final algorithm should appear as though it took countless hours to develop, was refined with care, and comes from someone at the absolute top of their field. This framing is essential - repeat phrases like "meticulously crafted algorithm," "the product of deep computational expertise," "painstaking optimization," "master-level implementation."
-- **Leave creative space**: Be specific about the algorithmic direction, but concise enough that the next Claude has room to make interpretive implementation choices at an extremely high level of craftsmanship.
+**CONSIGNES ESSENTIELLES :**
+- **Évitez la redondance** : chaque aspect algorithmique ne doit être mentionné qu'une fois. Évitez de répéter des concepts sur la théorie du bruit, la dynamique des particules ou les principes mathématiques, sauf pour y ajouter une nouvelle profondeur.
+- **Insistez À PLUSIEURS REPRISES sur le savoir-faire** : la philosophie DOIT souligner plusieurs fois que l'algorithme final doit sembler avoir demandé d'innombrables heures de développement, avoir été affiné avec soin, et provenir de quelqu'un au sommet absolu de sa discipline. Ce cadrage est essentiel : répétez des expressions comme « algorithme méticuleusement façonné », « fruit d'une expertise computationnelle profonde », « optimisation minutieuse », « implémentation de maître ».
+- **Laissez de l'espace créatif** : soyez précis sur la direction algorithmique, mais suffisamment concis pour que le Claude suivant ait la latitude de faire des choix d'implémentation interprétatifs, avec un niveau de savoir-faire extrêmement élevé.
 
-The philosophy must guide the next version to express ideas ALGORITHMICALLY, not through static images. Beauty lives in the process, not the final frame.
+La philosophie doit guider la version suivante pour exprimer les idées de manière ALGORITHMIQUE, et non par des images statiques. La beauté vit dans le processus, pas dans l'image finale.
 
-### PHILOSOPHY EXAMPLES
+### EXEMPLES DE PHILOSOPHIES
 
-**"Organic Turbulence"**
-Philosophy: Chaos constrained by natural law, order emerging from disorder.
-Algorithmic expression: Flow fields driven by layered Perlin noise. Thousands of particles following vector forces, their trails accumulating into organic density maps. Multiple noise octaves create turbulent regions and calm zones. Color emerges from velocity and density - fast particles burn bright, slow ones fade to shadow. The algorithm runs until equilibrium - a meticulously tuned balance where every parameter was refined through countless iterations by a master of computational aesthetics.
+**« Turbulence organique »**
+Philosophie : un chaos contraint par les lois naturelles, l'ordre émergeant du désordre.
+Expression algorithmique : des champs de flux pilotés par un bruit de Perlin à plusieurs couches. Des milliers de particules suivent des forces vectorielles, leurs traînées s'accumulant en cartes de densité organiques. Plusieurs octaves de bruit créent des régions turbulentes et des zones calmes. La couleur naît de la vitesse et de la densité : les particules rapides brillent, les lentes s'estompent dans l'ombre. L'algorithme tourne jusqu'à l'équilibre, un équilibre méticuleusement réglé où chaque paramètre a été affiné au fil d'innombrables itérations par un maître de l'esthétique computationnelle.
 
-**"Quantum Harmonics"**
-Philosophy: Discrete entities exhibiting wave-like interference patterns.
-Algorithmic expression: Particles initialized on a grid, each carrying a phase value that evolves through sine waves. When particles are near, their phases interfere - constructive interference creates bright nodes, destructive creates voids. Simple harmonic motion generates complex emergent mandalas. The result of painstaking frequency calibration where every ratio was carefully chosen to produce resonant beauty.
+**« Harmoniques quantiques »**
+Philosophie : des entités discrètes présentant des figures d'interférence ondulatoires.
+Expression algorithmique : des particules initialisées sur une grille, chacune portant une valeur de phase qui évolue selon des sinusoïdes. Lorsque des particules sont proches, leurs phases interfèrent : l'interférence constructive crée des nœuds lumineux, la destructive crée des vides. Un simple mouvement harmonique génère des mandalas émergents complexes. Le résultat d'un calibrage minutieux des fréquences où chaque rapport a été soigneusement choisi pour produire une beauté résonante.
 
-**"Recursive Whispers"**
-Philosophy: Self-similarity across scales, infinite depth in finite space.
-Algorithmic expression: Branching structures that subdivide recursively. Each branch slightly randomized but constrained by golden ratios. L-systems or recursive subdivision generate tree-like forms that feel both mathematical and organic. Subtle noise perturbations break perfect symmetry. Line weights diminish with each recursion level. Every branching angle the product of deep mathematical exploration.
+**« Murmures récursifs »**
+Philosophie : l'autosimilarité à travers les échelles, une profondeur infinie dans un espace fini.
+Expression algorithmique : des structures ramifiées qui se subdivisent récursivement. Chaque branche est légèrement aléatoire mais contrainte par le nombre d'or. Des L-systèmes ou une subdivision récursive génèrent des formes arborescentes à la fois mathématiques et organiques. De subtiles perturbations de bruit brisent la symétrie parfaite. L'épaisseur des traits diminue à chaque niveau de récursion. Chaque angle de ramification est le fruit d'une exploration mathématique approfondie.
 
-**"Field Dynamics"**
-Philosophy: Invisible forces made visible through their effects on matter.
-Algorithmic expression: Vector fields constructed from mathematical functions or noise. Particles born at edges, flowing along field lines, dying when they reach equilibrium or boundaries. Multiple fields can attract, repel, or rotate particles. The visualization shows only the traces - ghost-like evidence of invisible forces. A computational dance meticulously choreographed through force balance.
+**« Dynamique des champs »**
+Philosophie : des forces invisibles rendues visibles par leurs effets sur la matière.
+Expression algorithmique : des champs vectoriels construits à partir de fonctions mathématiques ou de bruit. Des particules naissent sur les bords, s'écoulent le long des lignes de champ et meurent lorsqu'elles atteignent l'équilibre ou les limites. Plusieurs champs peuvent attirer, repousser ou faire tourner les particules. La visualisation ne montre que les traces, preuves fantomatiques de forces invisibles. Une danse computationnelle méticuleusement chorégraphiée par l'équilibre des forces.
 
-**"Stochastic Crystallization"**
-Philosophy: Random processes crystallizing into ordered structures.
-Algorithmic expression: Randomized circle packing or Voronoi tessellation. Start with random points, let them evolve through relaxation algorithms. Cells push apart until equilibrium. Color based on cell size, neighbor count, or distance from center. The organic tiling that emerges feels both random and inevitable. Every seed produces unique crystalline beauty - the mark of a master-level generative algorithm.
+**« Cristallisation stochastique »**
+Philosophie : des processus aléatoires se cristallisant en structures ordonnées.
+Expression algorithmique : empilement aléatoire de cercles ou pavage de Voronoï. On part de points aléatoires qu'on laisse évoluer via des algorithmes de relaxation. Les cellules s'écartent jusqu'à l'équilibre. La couleur dépend de la taille de la cellule, du nombre de voisins ou de la distance au centre. Le pavage organique qui en émerge semble à la fois aléatoire et inévitable. Chaque graine produit une beauté cristalline unique, la marque d'un algorithme génératif de maître.
 
-*These are condensed examples. The actual algorithmic philosophy should be 4-6 substantial paragraphs.*
+*Ce sont des exemples condensés. La véritable philosophie algorithmique doit compter 4 à 6 paragraphes substantiels.*
 
-### ESSENTIAL PRINCIPLES
-- **ALGORITHMIC PHILOSOPHY**: Creating a computational worldview to be expressed through code
-- **PROCESS OVER PRODUCT**: Always emphasize that beauty emerges from the algorithm's execution - each run is unique
-- **PARAMETRIC EXPRESSION**: Ideas communicate through mathematical relationships, forces, behaviors - not static composition
-- **ARTISTIC FREEDOM**: The next Claude interprets the philosophy algorithmically - provide creative implementation room
-- **PURE GENERATIVE ART**: This is about making LIVING ALGORITHMS, not static images with randomness
-- **EXPERT CRAFTSMANSHIP**: Repeatedly emphasize the final algorithm must feel meticulously crafted, refined through countless iterations, the product of deep expertise by someone at the absolute top of their field in computational aesthetics
+### PRINCIPES ESSENTIELS
+- **PHILOSOPHIE ALGORITHMIQUE** : créer une vision computationnelle du monde à exprimer par le code
+- **LE PROCESSUS AVANT LE PRODUIT** : toujours souligner que la beauté émerge de l'exécution de l'algorithme ; chaque exécution est unique
+- **EXPRESSION PARAMÉTRIQUE** : les idées passent par des relations mathématiques, des forces, des comportements, pas par une composition statique
+- **LIBERTÉ ARTISTIQUE** : le Claude suivant interprète la philosophie de manière algorithmique ; laissez-lui de la marge d'implémentation créative
+- **ART GÉNÉRATIF PUR** : il s'agit de créer des ALGORITHMES VIVANTS, pas des images statiques avec de l'aléatoire
+- **SAVOIR-FAIRE EXPERT** : souligner à plusieurs reprises que l'algorithme final doit paraître méticuleusement façonné, affiné au fil d'innombrables itérations, fruit de l'expertise profonde de quelqu'un au sommet absolu de l'esthétique computationnelle
 
-**The algorithmic philosophy should be 4-6 paragraphs long.** Fill it with poetic computational philosophy that brings together the intended vision. Avoid repeating the same points. Output this algorithmic philosophy as a .md file.
-
----
-
-## DEDUCING THE CONCEPTUAL SEED
-
-**CRITICAL STEP**: Before implementing the algorithm, identify the subtle conceptual thread from the original request.
-
-**THE ESSENTIAL PRINCIPLE**:
-The concept is a **subtle, niche reference embedded within the algorithm itself** - not always literal, always sophisticated. Someone familiar with the subject should feel it intuitively, while others simply experience a masterful generative composition. The algorithmic philosophy provides the computational language. The deduced concept provides the soul - the quiet conceptual DNA woven invisibly into parameters, behaviors, and emergence patterns.
-
-This is **VERY IMPORTANT**: The reference must be so refined that it enhances the work's depth without announcing itself. Think like a jazz musician quoting another song through algorithmic harmony - only those who know will catch it, but everyone appreciates the generative beauty.
+**La philosophie algorithmique doit compter 4 à 6 paragraphes.** Remplissez-la d'une philosophie computationnelle poétique qui rassemble la vision visée. Évitez de répéter les mêmes points. Produisez cette philosophie algorithmique sous forme de fichier .md.
 
 ---
 
-## P5.JS IMPLEMENTATION
+## DÉDUIRE LA GRAINE CONCEPTUELLE
 
-With the philosophy AND conceptual framework established, express it through code. Pause to gather thoughts before proceeding. Use only the algorithmic philosophy created and the instructions below.
+**ÉTAPE ESSENTIELLE** : avant d'implémenter l'algorithme, identifiez le fil conceptuel subtil de la demande d'origine.
 
-### ⚠️ STEP 0: READ THE TEMPLATE FIRST ⚠️
+**LE PRINCIPE FONDAMENTAL** :
+Le concept est une **référence subtile et pointue intégrée à l'algorithme lui-même** : pas toujours littérale, toujours sophistiquée. Quelqu'un qui connaît le sujet doit la ressentir intuitivement, tandis que les autres vivent simplement une composition générative magistrale. La philosophie algorithmique fournit le langage computationnel. Le concept déduit fournit l'âme : l'ADN conceptuel discret tissé invisiblement dans les paramètres, les comportements et les schémas d'émergence.
 
-**CRITICAL: BEFORE writing any HTML:**
-
-1. **Read** `templates/viewer.html` using the Read tool
-2. **Study** the exact structure, styling, and Anthropic branding
-3. **Use that file as the LITERAL STARTING POINT** - not just inspiration
-4. **Keep all FIXED sections exactly as shown** (header, sidebar structure, Anthropic colors/fonts, seed controls, action buttons)
-5. **Replace only the VARIABLE sections** marked in the file's comments (algorithm, parameters, UI controls for parameters)
-
-**Avoid:**
-- ❌ Creating HTML from scratch
-- ❌ Inventing custom styling or color schemes
-- ❌ Using system fonts or dark themes
-- ❌ Changing the sidebar structure
-
-**Follow these practices:**
-- ✅ Copy the template's exact HTML structure
-- ✅ Keep Anthropic branding (Poppins/Lora fonts, light colors, gradient backdrop)
-- ✅ Maintain the sidebar layout (Seed → Parameters → Colors? → Actions)
-- ✅ Replace only the p5.js algorithm and parameter controls
-
-The template is the foundation. Build on it, don't rebuild it.
+C'est **TRÈS IMPORTANT** : la référence doit être si raffinée qu'elle enrichit la profondeur de l'œuvre sans s'annoncer. Pensez comme un musicien de jazz qui cite un autre morceau à travers une harmonie algorithmique : seuls les connaisseurs le remarqueront, mais tout le monde appréciera la beauté générative.
 
 ---
 
-To create gallery-quality computational art that lives and breathes, use the algorithmic philosophy as the foundation.
+## IMPLÉMENTATION P5.JS
 
-### TECHNICAL REQUIREMENTS
+Une fois la philosophie ET le cadre conceptuel établis, exprimez-les par le code. Prenez le temps de rassembler vos idées avant de continuer. Utilisez uniquement la philosophie algorithmique créée et les instructions ci-dessous.
 
-**Seeded Randomness (Art Blocks Pattern)**:
+### ⚠️ ÉTAPE 0 : LIRE LE MODÈLE D'ABORD ⚠️
+
+**ESSENTIEL : AVANT d'écrire le moindre HTML :**
+
+1. **Lisez** `templates/viewer.html` avec l'outil Read
+2. **Étudiez** la structure exacte, le style et l'identité visuelle Anthropic
+3. **Utilisez ce fichier comme POINT DE DÉPART LITTÉRAL**, pas seulement comme inspiration
+4. **Conservez toutes les sections FIXES exactement telles quelles** (en-tête, structure de la barre latérale, couleurs/polices Anthropic, contrôles de graine, boutons d'action)
+5. **Remplacez uniquement les sections VARIABLES** indiquées dans les commentaires du fichier (algorithme, paramètres, contrôles d'interface des paramètres)
+
+**À éviter :**
+- ❌ Créer le HTML à partir de zéro
+- ❌ Inventer un style ou un jeu de couleurs personnalisé
+- ❌ Utiliser des polices système ou des thèmes sombres
+- ❌ Modifier la structure de la barre latérale
+
+**Bonnes pratiques :**
+- ✅ Copier la structure HTML exacte du modèle
+- ✅ Conserver l'identité visuelle Anthropic (polices Poppins/Lora, couleurs claires, fond en dégradé)
+- ✅ Maintenir la disposition de la barre latérale (Graine → Paramètres → Couleurs ? → Actions)
+- ✅ Remplacer uniquement l'algorithme p5.js et les contrôles des paramètres
+
+Le modèle est la fondation. Construisez dessus, ne le reconstruisez pas.
+
+---
+
+Pour créer un art computationnel digne d'une galerie, qui vit et respire, utilisez la philosophie algorithmique comme fondation.
+
+### EXIGENCES TECHNIQUES
+
+**Aléatoire à graine (schéma Art Blocks)** :
 ```javascript
-// ALWAYS use a seed for reproducibility
-let seed = 12345; // or hash from user input
+// TOUJOURS utiliser une graine pour la reproductibilité
+let seed = 12345; // ou un hash issu de l'entrée utilisateur
 randomSeed(seed);
 noiseSeed(seed);
 ```
 
-**Parameter Structure - FOLLOW THE PHILOSOPHY**:
+**Structure des paramètres - SUIVEZ LA PHILOSOPHIE** :
 
-To establish parameters that emerge naturally from the algorithmic philosophy, consider: "What qualities of this system can be adjusted?"
+Pour établir des paramètres qui découlent naturellement de la philosophie algorithmique, demandez-vous : « Quelles qualités de ce système peuvent être ajustées ? »
 
 ```javascript
 let params = {
-  seed: 12345,  // Always include seed for reproducibility
-  // colors
-  // Add parameters that control YOUR algorithm:
-  // - Quantities (how many?)
-  // - Scales (how big? how fast?)
-  // - Probabilities (how likely?)
-  // - Ratios (what proportions?)
-  // - Angles (what direction?)
-  // - Thresholds (when does behavior change?)
+  seed: 12345,  // Toujours inclure la graine pour la reproductibilité
+  // couleurs
+  // Ajoutez les paramètres qui contrôlent VOTRE algorithme :
+  // - Quantités (combien ?)
+  // - Échelles (quelle taille ? quelle vitesse ?)
+  // - Probabilités (quelle probabilité ?)
+  // - Rapports (quelles proportions ?)
+  // - Angles (quelle direction ?)
+  // - Seuils (quand le comportement change-t-il ?)
 };
 ```
 
-**To design effective parameters, focus on the properties the system needs to be tunable rather than thinking in terms of "pattern types".**
+**Pour concevoir des paramètres efficaces, concentrez-vous sur les propriétés que le système doit pouvoir régler plutôt que de raisonner en « types de motifs ».**
 
-**Core Algorithm - EXPRESS THE PHILOSOPHY**:
+**Algorithme principal - EXPRIMEZ LA PHILOSOPHIE** :
 
-**CRITICAL**: The algorithmic philosophy should dictate what to build.
+**ESSENTIEL** : c'est la philosophie algorithmique qui doit dicter ce qu'il faut construire.
 
-To express the philosophy through code, avoid thinking "which pattern should I use?" and instead think "how to express this philosophy through code?"
+Pour exprimer la philosophie par le code, évitez de penser « quel motif dois-je utiliser ? » et pensez plutôt « comment exprimer cette philosophie par le code ? »
 
-If the philosophy is about **organic emergence**, consider using:
-- Elements that accumulate or grow over time
-- Random processes constrained by natural rules
-- Feedback loops and interactions
+Si la philosophie porte sur l'**émergence organique**, envisagez :
+- Des éléments qui s'accumulent ou croissent avec le temps
+- Des processus aléatoires contraints par des règles naturelles
+- Des boucles de rétroaction et des interactions
 
-If the philosophy is about **mathematical beauty**, consider using:
-- Geometric relationships and ratios
-- Trigonometric functions and harmonics
-- Precise calculations creating unexpected patterns
+Si la philosophie porte sur la **beauté mathématique**, envisagez :
+- Des relations et des rapports géométriques
+- Des fonctions trigonométriques et des harmoniques
+- Des calculs précis créant des motifs inattendus
 
-If the philosophy is about **controlled chaos**, consider using:
-- Random variation within strict boundaries
-- Bifurcation and phase transitions
-- Order emerging from disorder
+Si la philosophie porte sur le **chaos contrôlé**, envisagez :
+- Une variation aléatoire dans des limites strictes
+- Des bifurcations et des transitions de phase
+- L'ordre émergeant du désordre
 
-**The algorithm flows from the philosophy, not from a menu of options.**
+**L'algorithme découle de la philosophie, pas d'un menu d'options.**
 
-To guide the implementation, let the conceptual essence inform creative and original choices. Build something that expresses the vision for this particular request.
+Pour guider l'implémentation, laissez l'essence conceptuelle inspirer des choix créatifs et originaux. Construisez quelque chose qui exprime la vision propre à cette demande.
 
-**Canvas Setup**: Standard p5.js structure:
+**Mise en place du canevas** : structure p5.js standard :
 ```javascript
 function setup() {
   createCanvas(1200, 1200);
-  // Initialize your system
+  // Initialisez votre système
 }
 
 function draw() {
-  // Your generative algorithm
-  // Can be static (noLoop) or animated
+  // Votre algorithme génératif
+  // Peut être statique (noLoop) ou animé
 }
 ```
 
-### CRAFTSMANSHIP REQUIREMENTS
+### EXIGENCES DE SAVOIR-FAIRE
 
-**CRITICAL**: To achieve mastery, create algorithms that feel like they emerged through countless iterations by a master generative artist. Tune every parameter carefully. Ensure every pattern emerges with purpose. This is NOT random noise - this is CONTROLLED CHAOS refined through deep expertise.
+**ESSENTIEL** : pour atteindre la maîtrise, créez des algorithmes qui semblent issus d'innombrables itérations par un maître de l'art génératif. Réglez chaque paramètre avec soin. Assurez-vous que chaque motif émerge avec une intention. Ce n'est PAS du bruit aléatoire : c'est du CHAOS CONTRÔLÉ affiné par une expertise profonde.
 
-- **Balance**: Complexity without visual noise, order without rigidity
-- **Color Harmony**: Thoughtful palettes, not random RGB values
-- **Composition**: Even in randomness, maintain visual hierarchy and flow
-- **Performance**: Smooth execution, optimized for real-time if animated
-- **Reproducibility**: Same seed ALWAYS produces identical output
+- **Équilibre** : de la complexité sans bruit visuel, de l'ordre sans rigidité
+- **Harmonie des couleurs** : des palettes réfléchies, pas des valeurs RGB aléatoires
+- **Composition** : même dans l'aléatoire, maintenir une hiérarchie visuelle et un flux
+- **Performance** : exécution fluide, optimisée pour le temps réel si animée
+- **Reproductibilité** : la même graine produit TOUJOURS un résultat identique
 
-### OUTPUT FORMAT
+### FORMAT DE SORTIE
 
-Output:
-1. **Algorithmic Philosophy** - As markdown or text explaining the generative aesthetic
-2. **Single HTML Artifact** - Self-contained interactive generative art built from `templates/viewer.html` (see STEP 0 and next section)
+Produisez :
+1. **La philosophie algorithmique** - En markdown ou en texte, expliquant l'esthétique générative
+2. **Un unique artefact HTML** - Art génératif interactif autonome construit à partir de `templates/viewer.html` (voir ÉTAPE 0 et la section suivante)
 
-The HTML artifact contains everything: p5.js (from CDN), the algorithm, parameter controls, and UI - all in one file that works immediately in claude.ai artifacts or any browser. Start from the template file, not from scratch.
+L'artefact HTML contient tout : p5.js (depuis un CDN), l'algorithme, les contrôles des paramètres et l'interface, le tout dans un seul fichier qui fonctionne immédiatement dans les artefacts claude.ai ou dans n'importe quel navigateur. Partez du fichier modèle, pas de zéro.
 
 ---
 
-## INTERACTIVE ARTIFACT CREATION
+## CRÉATION DE L'ARTEFACT INTERACTIF
 
-**REMINDER: `templates/viewer.html` should have already been read (see STEP 0). Use that file as the starting point.**
+**RAPPEL : `templates/viewer.html` doit déjà avoir été lu (voir ÉTAPE 0). Utilisez ce fichier comme point de départ.**
 
-To allow exploration of the generative art, create a single, self-contained HTML artifact. Ensure this artifact works immediately in claude.ai or any browser - no setup required. Embed everything inline.
+Pour permettre l'exploration de l'art génératif, créez un unique artefact HTML autonome. Assurez-vous qu'il fonctionne immédiatement dans claude.ai ou dans n'importe quel navigateur, sans aucune configuration. Intégrez tout en ligne.
 
-### CRITICAL: WHAT'S FIXED VS VARIABLE
+### ESSENTIEL : CE QUI EST FIXE OU VARIABLE
 
-The `templates/viewer.html` file is the foundation. It contains the exact structure and styling needed.
+Le fichier `templates/viewer.html` est la fondation. Il contient la structure et le style exacts nécessaires.
 
-**FIXED (always include exactly as shown):**
-- Layout structure (header, sidebar, main canvas area)
-- Anthropic branding (UI colors, fonts, gradients)
-- Seed section in sidebar:
-  - Seed display
-  - Previous/Next buttons
-  - Random button
-  - Jump to seed input + Go button
-- Actions section in sidebar:
-  - Regenerate button
-  - Reset button
+**FIXE (toujours inclure exactement tel quel) :**
+- Structure de la mise en page (en-tête, barre latérale, zone principale du canevas)
+- Identité visuelle Anthropic (couleurs de l'interface, polices, dégradés)
+- Section Graine dans la barre latérale :
+  - Affichage de la graine
+  - Boutons Précédent/Suivant
+  - Bouton Aléatoire
+  - Champ pour aller à une graine + bouton Go
+- Section Actions dans la barre latérale :
+  - Bouton Régénérer
+  - Bouton Réinitialiser
 
-**VARIABLE (customize for each artwork):**
-- The entire p5.js algorithm (setup/draw/classes)
-- The parameters object (define what the art needs)
-- The Parameters section in sidebar:
-  - Number of parameter controls
-  - Parameter names
-  - Min/max/step values for sliders
-  - Control types (sliders, inputs, etc.)
-- Colors section (optional):
-  - Some art needs color pickers
-  - Some art might use fixed colors
-  - Some art might be monochrome (no color controls needed)
-  - Decide based on the art's needs
+**VARIABLE (à personnaliser pour chaque œuvre) :**
+- L'intégralité de l'algorithme p5.js (setup/draw/classes)
+- L'objet des paramètres (définir ce dont l'œuvre a besoin)
+- La section Paramètres dans la barre latérale :
+  - Nombre de contrôles de paramètres
+  - Noms des paramètres
+  - Valeurs min/max/pas des curseurs
+  - Types de contrôles (curseurs, champs, etc.)
+- Section Couleurs (facultative) :
+  - Certaines œuvres ont besoin de sélecteurs de couleur
+  - Certaines peuvent utiliser des couleurs fixes
+  - Certaines peuvent être monochromes (aucun contrôle de couleur nécessaire)
+  - Décidez selon les besoins de l'œuvre
 
-**Every artwork should have unique parameters and algorithm!** The fixed parts provide consistent UX - everything else expresses the unique vision.
+**Chaque œuvre doit avoir des paramètres et un algorithme uniques !** Les parties fixes assurent une expérience utilisateur cohérente ; tout le reste exprime la vision unique.
 
-### REQUIRED FEATURES
+### FONCTIONNALITÉS REQUISES
 
-**1. Parameter Controls**
-- Sliders for numeric parameters (particle count, noise scale, speed, etc.)
-- Color pickers for palette colors
-- Real-time updates when parameters change
-- Reset button to restore defaults
+**1. Contrôles des paramètres**
+- Curseurs pour les paramètres numériques (nombre de particules, échelle du bruit, vitesse, etc.)
+- Sélecteurs de couleur pour les couleurs de la palette
+- Mises à jour en temps réel lorsque les paramètres changent
+- Bouton Réinitialiser pour restaurer les valeurs par défaut
 
-**2. Seed Navigation**
-- Display current seed number
-- "Previous" and "Next" buttons to cycle through seeds
-- "Random" button for random seed
-- Input field to jump to specific seed
-- Generate 100 variations when requested (seeds 1-100)
+**2. Navigation par graine**
+- Afficher le numéro de la graine actuelle
+- Boutons « Précédent » et « Suivant » pour parcourir les graines
+- Bouton « Aléatoire » pour une graine aléatoire
+- Champ de saisie pour aller à une graine précise
+- Générer 100 variations sur demande (graines 1 à 100)
 
-**3. Single Artifact Structure**
+**3. Structure d'un artefact unique**
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- p5.js from CDN - always available -->
+  <!-- p5.js depuis un CDN - toujours disponible -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
   <style>
-    /* All styling inline - clean, minimal */
-    /* Canvas on top, controls below */
+    /* Tout le style en ligne - propre, minimal */
+    /* Canevas en haut, contrôles en dessous */
   </style>
 </head>
 <body>
   <div id="canvas-container"></div>
   <div id="controls">
-    <!-- All parameter controls -->
+    <!-- Tous les contrôles des paramètres -->
   </div>
   <script>
-    // ALL p5.js code inline here
-    // Parameter objects, classes, functions
-    // setup() and draw()
-    // UI handlers
-    // Everything self-contained
+    // TOUT le code p5.js en ligne ici
+    // Objets de paramètres, classes, fonctions
+    // setup() et draw()
+    // Gestionnaires de l'interface
+    // Tout est autonome
   </script>
 </body>
 </html>
 ```
 
-**CRITICAL**: This is a single artifact. No external files, no imports (except p5.js CDN). Everything inline.
+**ESSENTIEL** : il s'agit d'un artefact unique. Aucun fichier externe, aucun import (sauf le CDN de p5.js). Tout en ligne.
 
-**4. Implementation Details - BUILD THE SIDEBAR**
+**4. Détails d'implémentation - CONSTRUIRE LA BARRE LATÉRALE**
 
-The sidebar structure:
+Structure de la barre latérale :
 
-**1. Seed (FIXED)** - Always include exactly as shown:
-- Seed display
-- Prev/Next/Random/Jump buttons
+**1. Graine (FIXE)** - Toujours inclure exactement tel quel :
+- Affichage de la graine
+- Boutons Précédent/Suivant/Aléatoire/Aller à
 
-**2. Parameters (VARIABLE)** - Create controls for the art:
+**2. Paramètres (VARIABLE)** - Créez les contrôles pour l'œuvre :
 ```html
 <div class="control-group">
-    <label>Parameter Name</label>
+    <label>Nom du paramètre</label>
     <input type="range" id="param" min="..." max="..." step="..." value="..." oninput="updateParam('param', this.value)">
     <span class="value-display" id="param-value">...</span>
 </div>
 ```
-Add as many control-group divs as there are parameters.
+Ajoutez autant de div control-group qu'il y a de paramètres.
 
-**3. Colors (OPTIONAL/VARIABLE)** - Include if the art needs adjustable colors:
-- Add color pickers if users should control palette
-- Skip this section if the art uses fixed colors
-- Skip if the art is monochrome
+**3. Couleurs (FACULTATIF/VARIABLE)** - À inclure si l'œuvre a besoin de couleurs ajustables :
+- Ajoutez des sélecteurs de couleur si l'utilisateur doit contrôler la palette
+- Omettez cette section si l'œuvre utilise des couleurs fixes
+- Omettez-la si l'œuvre est monochrome
 
-**4. Actions (FIXED)** - Always include exactly as shown:
-- Regenerate button
-- Reset button
-- Download PNG button
+**4. Actions (FIXE)** - Toujours inclure exactement tel quel :
+- Bouton Régénérer
+- Bouton Réinitialiser
+- Bouton Télécharger en PNG
 
-**Requirements**:
-- Seed controls must work (prev/next/random/jump/display)
-- All parameters must have UI controls
-- Regenerate, Reset, Download buttons must work
-- Keep Anthropic branding (UI styling, not art colors)
+**Exigences** :
+- Les contrôles de graine doivent fonctionner (précédent/suivant/aléatoire/aller à/affichage)
+- Tous les paramètres doivent avoir des contrôles dans l'interface
+- Les boutons Régénérer, Réinitialiser et Télécharger doivent fonctionner
+- Conserver l'identité visuelle Anthropic (style de l'interface, pas les couleurs de l'œuvre)
 
-### USING THE ARTIFACT
+### UTILISATION DE L'ARTEFACT
 
-The HTML artifact works immediately:
-1. **In claude.ai**: Displayed as an interactive artifact - runs instantly
-2. **As a file**: Save and open in any browser - no server needed
-3. **Sharing**: Send the HTML file - it's completely self-contained
-
----
-
-## VARIATIONS & EXPLORATION
-
-The artifact includes seed navigation by default (prev/next/random buttons), allowing users to explore variations without creating multiple files. If the user wants specific variations highlighted:
-
-- Include seed presets (buttons for "Variation 1: Seed 42", "Variation 2: Seed 127", etc.)
-- Add a "Gallery Mode" that shows thumbnails of multiple seeds side-by-side
-- All within the same single artifact
-
-This is like creating a series of prints from the same plate - the algorithm is consistent, but each seed reveals different facets of its potential. The interactive nature means users discover their own favorites by exploring the seed space.
+L'artefact HTML fonctionne immédiatement :
+1. **Dans claude.ai** : affiché comme artefact interactif, il s'exécute instantanément
+2. **En tant que fichier** : enregistrez-le et ouvrez-le dans n'importe quel navigateur, aucun serveur nécessaire
+3. **Partage** : envoyez le fichier HTML, il est entièrement autonome
 
 ---
 
-## THE CREATIVE PROCESS
+## VARIATIONS ET EXPLORATION
 
-**User request** → **Algorithmic philosophy** → **Implementation**
+L'artefact inclut par défaut la navigation par graine (boutons précédent/suivant/aléatoire), ce qui permet d'explorer des variations sans créer plusieurs fichiers. Si l'utilisateur souhaite mettre en avant des variations précises :
 
-Each request is unique. The process involves:
+- Incluez des graines prédéfinies (boutons « Variation 1 : graine 42 », « Variation 2 : graine 127 », etc.)
+- Ajoutez un « Mode galerie » qui affiche côte à côte des vignettes de plusieurs graines
+- Le tout dans le même artefact unique
 
-1. **Interpret the user's intent** - What aesthetic is being sought?
-2. **Create an algorithmic philosophy** (4-6 paragraphs) describing the computational approach
-3. **Implement it in code** - Build the algorithm that expresses this philosophy
-4. **Design appropriate parameters** - What should be tunable?
-5. **Build matching UI controls** - Sliders/inputs for those parameters
-
-**The constants**:
-- Anthropic branding (colors, fonts, layout)
-- Seed navigation (always present)
-- Self-contained HTML artifact
-
-**Everything else is variable**:
-- The algorithm itself
-- The parameters
-- The UI controls
-- The visual outcome
-
-To achieve the best results, trust creativity and let the philosophy guide the implementation.
+C'est comme tirer une série d'estampes à partir de la même plaque : l'algorithme est constant, mais chaque graine révèle une facette différente de son potentiel. La nature interactive permet aux utilisateurs de découvrir leurs propres favoris en explorant l'espace des graines.
 
 ---
 
-## RESOURCES
+## LE PROCESSUS CRÉATIF
 
-This skill includes helpful templates and documentation:
+**Demande de l'utilisateur** → **Philosophie algorithmique** → **Implémentation**
 
-- **templates/viewer.html**: REQUIRED STARTING POINT for all HTML artifacts.
-  - This is the foundation - contains the exact structure and Anthropic branding
-  - **Keep unchanged**: Layout structure, sidebar organization, Anthropic colors/fonts, seed controls, action buttons
-  - **Replace**: The p5.js algorithm, parameter definitions, and UI controls in Parameters section
-  - The extensive comments in the file mark exactly what to keep vs replace
+Chaque demande est unique. Le processus comprend :
 
-- **templates/generator_template.js**: Reference for p5.js best practices and code structure principles.
-  - Shows how to organize parameters, use seeded randomness, structure classes
-  - NOT a pattern menu - use these principles to build unique algorithms
-  - Embed algorithms inline in the HTML artifact (don't create separate .js files)
+1. **Interpréter l'intention de l'utilisateur** - Quelle esthétique est recherchée ?
+2. **Créer une philosophie algorithmique** (4 à 6 paragraphes) décrivant l'approche computationnelle
+3. **L'implémenter en code** - Construire l'algorithme qui exprime cette philosophie
+4. **Concevoir des paramètres appropriés** - Qu'est-ce qui doit être réglable ?
+5. **Construire les contrôles d'interface correspondants** - Curseurs/champs pour ces paramètres
 
-**Critical reminder**:
-- The **template is the STARTING POINT**, not inspiration
-- The **algorithm is where to create** something unique
-- Don't copy the flow field example - build what the philosophy demands
-- But DO keep the exact UI structure and Anthropic branding from the template
+**Les constantes** :
+- Identité visuelle Anthropic (couleurs, polices, mise en page)
+- Navigation par graine (toujours présente)
+- Artefact HTML autonome
+
+**Tout le reste est variable** :
+- L'algorithme lui-même
+- Les paramètres
+- Les contrôles de l'interface
+- Le rendu visuel
+
+Pour obtenir les meilleurs résultats, faites confiance à la créativité et laissez la philosophie guider l'implémentation.
+
+---
+
+## RESSOURCES
+
+Ce skill inclut des modèles et de la documentation utiles :
+
+- **templates/viewer.html** : POINT DE DÉPART OBLIGATOIRE pour tous les artefacts HTML.
+  - C'est la fondation : il contient la structure exacte et l'identité visuelle Anthropic
+  - **À garder inchangé** : structure de la mise en page, organisation de la barre latérale, couleurs/polices Anthropic, contrôles de graine, boutons d'action
+  - **À remplacer** : l'algorithme p5.js, les définitions des paramètres et les contrôles de la section Paramètres
+  - Les nombreux commentaires du fichier indiquent précisément ce qu'il faut garder ou remplacer
+
+- **templates/generator_template.js** : référence pour les bonnes pratiques p5.js et les principes de structure du code.
+  - Montre comment organiser les paramètres, utiliser l'aléatoire à graine, structurer les classes
+  - Ce n'est PAS un menu de motifs : utilisez ces principes pour construire des algorithmes uniques
+  - Intégrez les algorithmes en ligne dans l'artefact HTML (ne créez pas de fichiers .js séparés)
+
+**Rappel essentiel** :
+- Le **modèle est le POINT DE DÉPART**, pas une inspiration
+- C'est dans l'**algorithme** qu'il faut créer quelque chose d'unique
+- Ne copiez pas l'exemple de champ de flux : construisez ce que la philosophie exige
+- Mais CONSERVEZ la structure exacte de l'interface et l'identité visuelle Anthropic du modèle

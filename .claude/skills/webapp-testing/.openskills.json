@@ -1,0 +1,7 @@
+{
+  "source": "anthropics/skills/skills/webapp-testing",
+  "sourceType": "git",
+  "repoUrl": "https://github.com/anthropics/skills",
+  "subpath": "skills/webapp-testing",
+  "installedAt": "2026-10-05T09:03:33.308Z"
+}
